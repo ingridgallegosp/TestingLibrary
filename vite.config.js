@@ -13,9 +13,8 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
     globals: true,
-    include: ['**/*.spec.js'], // Patrón para detectar tests
-    setupFiles: './test-setup.js', // <-- Agrega esta línea
-
+    include: ['**/*.spec.js'],
+    setupFiles: './test-setup.js',
   },
   resolve: {
     alias: {
